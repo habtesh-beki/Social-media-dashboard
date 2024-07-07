@@ -1,4 +1,4 @@
-const getYouTubeData = require("./../config/auth")
+const getYouTubeData = require("../config/youtubeAuth")
 
 exports.getChannelInfo = async (req,res) => {
     try{
@@ -17,7 +17,7 @@ exports.getChannelInfo = async (req,res) => {
         message:'fail',
         message:error.message
      })
-    }
+  }
 }
 exports.getRecentVideo = async(req, res) => {
     try{
